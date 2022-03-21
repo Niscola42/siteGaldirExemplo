@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/inputExemplo.css">
+    <title>INPUT COM HTML</title>
+</head>
+<body>
+    <form method="POST" action="">
+        <div class="containerForm">
+            <label class="margin-top" for="nome">Nome</label>
+            <input  type="text" placeholder="Nome" name="nome">
+
+            <label class="margin-top" for="sobrenome">Sobrenome</label>
+            <input type="text" placeholder="Sobrenome" name="sobrenome">
+
+            <label class="margin-top" for="email">E-mail</label>
+            <input type="email" placeholder="E-mail" name="email">
+
+            <details class="margin-top">
+                <summary>Ler mais</summary>
+                <label for="ano">Ano que está cursando a faculdade:</label>
+                <input list="anos" name="ano" id="ano" placeholder="Semestres">
+
+                <datalist id="anos">
+                    <option value="Primeiro semestre">
+                    <option value="Segundo semestre">
+                    <option value="Terceiro semestre">
+                    <option value="Quarto semestre">
+                    <option value="Quinto semestre">
+                    <option value="Sexto semestre">
+                    <option value="Sétimo semestre">
+                    <option value="Oitavo semestre">     
+                </datalist>
+            </details>
+
+            <div class="containerFormFoot">
+                <input class="margin-top margin" type="submit" value="Enviar">
+                <input class="margin-top margin" type="reset" value="Clear">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
